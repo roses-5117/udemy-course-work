@@ -1,0 +1,11 @@
+body{
+    line-height: 1.7;
+    font-stretch: 16rem;
+    font-family: var(--font-family-base);
+    color: var(--color-font-base);
+    font-weight: 500;
+
+    @include g.mq(){
+        font-stretch: 18rem;
+    }
+}
