@@ -8,6 +8,7 @@
     font-family: var(--font-family-en);
     font-size: 40rem;
     font-weight: 400;
+    line-height: 1;
 
     @include g.mq(){
         font-size: 50rem;
@@ -15,7 +16,10 @@
 }
 
 .c-title-ja {
+    line-height: 1;
     font-size: 14rem;
+    font-weight:  400;
+    color: var(--color-font-light);
 
     @include g.mq(){
         grid-column:3/4;
