@@ -1,0 +1,20 @@
+@use"../global/" as g;
+
+.c-title {
+
+}
+
+.c-title-en {
+    font-family: var(--font-family-en);
+    font-size: 40rem;
+    font-weight: 400;
+
+    @include g.mq(){
+        font-size: 50rem;
+    }
+}
+
+.c-title-jp {
+
+}
+

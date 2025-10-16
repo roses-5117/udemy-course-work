@@ -1,0 +1,94 @@
+:root {
+  --color-primary: #87D303;
+  --color-primary02: #A5DF40;
+  --color-bg-extra-light: #FAFAFA;
+  --color-bg-light: #F2F2F2;
+  --color-border: #DDDDDD;
+  --color-font-base: #333333;
+  --color-font-light: #888888;
+  --color-white: #FFFFFF;
+  --color-red: #E95757;
+}
+
+:root {
+  --font-family-base: "Noto Serif JP", serif;
+  --font-family-en: "Dosis", sans-serif;
+}
+
+:root {
+  --z-index-header: 30;
+  --z-index-default: 1;
+  --z-index-negative: -1;
+}
+
+:root {
+  --base-vw: 375;
+}
+@media screen and (min-width: 900px) {
+  :root {
+    --base-vw: 1366;
+  }
+}
+
+html {
+  font-size: calc(100vw / var(--base-vw));
+}
+
+body {
+  line-height: 1.7;
+  font-stretch: 16rem;
+  font-family: var(--font-family-base);
+  color: var(--color-font-base);
+  font-weight: 500;
+}
+@media screen and (min-width: 900px) {
+  body {
+    font-stretch: 18rem;
+  }
+}
+
+* {
+  letter-spacing: 0.05em;
+}
+
+.u-visually-hidden {
+  position: absolute !important;
+  white-space: nowrap !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  border: 0 !important;
+  padding: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  clip-path: inset(50%) !important;
+  margin: -1px !important;
+}
+
+.c-title-en {
+  font-family: var(--font-family-en);
+  font-size: 40rem;
+  font-weight: 400;
+}
+@media screen and (min-width: 900px) {
+  .c-title-en {
+    font-size: 50rem;
+  }
+}
+
+.l-container-s {
+  padding-inline: 20rem;
+}
+@media screen and (min-width: 900px) {
+  .l-container-s {
+    padding-inline: 303rem;
+  }
+}
+
+.l-container {
+  padding-inline: 20rem;
+}
+@media screen and (min-width: 900px) {
+  .l-container {
+    padding-inline: 83rem;
+  }
+}/*# sourceMappingURL=style.css.map */
