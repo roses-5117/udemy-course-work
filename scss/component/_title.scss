@@ -14,7 +14,12 @@
     }
 }
 
-.c-title-jp {
+.c-title-ja {
+    font-size: 14rem;
 
+    @include g.mq(){
+        grid-column:3/4;
+        grid-row:1/2;
+    }
 }
 

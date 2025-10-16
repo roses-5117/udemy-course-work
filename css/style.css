@@ -75,6 +75,16 @@ body {
   }
 }
 
+.c-title-ja {
+  font-size: 14rem;
+}
+@media screen and (min-width: 900px) {
+  .c-title-ja {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+}
+
 .l-container-s {
   padding-inline: 20rem;
 }
