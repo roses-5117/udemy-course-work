@@ -65,5 +65,28 @@
         color: var(--color-white);
 }
 
-11:00まで視聴
+.c-title-small{
+    font-size: 16rem;
+    letter-spacing: 0.075em;
+    line-height: 1;
+    font-family: var(--font-family-en);
+    display: grid;
+    grid-template-columns: 6rem 1fr;
+    gap: 10rem;
+    align-items: center;
+
+    @include g.mq(){
+        gap: 14rem;
+        font-size: 20rem;
+    }
+
+    &::before{
+        content: "";
+        display: block;
+        width: 6rem;
+        aspect-ratio: 1/1;
+        border-radius:  50%;
+        background-color:var(--color-primary);
+    }
+}
 

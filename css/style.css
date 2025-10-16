@@ -21,6 +21,16 @@
   --z-index-negative: -1;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: inherit;
+}
+
 :root {
   --base-vw: 375;
 }
@@ -36,14 +46,14 @@ html {
 
 body {
   line-height: 1.7;
-  font-stretch: 16rem;
+  font-size: 16rem;
   font-family: var(--font-family-base);
   color: var(--color-font-base);
   font-weight: 500;
 }
 @media screen and (min-width: 900px) {
   body {
-    font-stretch: 18rem;
+    font-size: 18rem;
   }
 }
 
@@ -128,6 +138,31 @@ body {
 
 .c-title-ja--white {
   color: var(--color-white);
+}
+
+.c-title-small {
+  font-size: 16rem;
+  letter-spacing: 0.075em;
+  line-height: 1;
+  font-family: var(--font-family-en);
+  display: grid;
+  grid-template-columns: 6rem 1fr;
+  gap: 10rem;
+  align-items: center;
+}
+@media screen and (min-width: 900px) {
+  .c-title-small {
+    gap: 14rem;
+    font-size: 20rem;
+  }
+}
+.c-title-small::before {
+  content: "";
+  display: block;
+  width: 6rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: var(--color-primary);
 }
 
 .l-container-s {
