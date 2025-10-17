@@ -1,0 +1,22 @@
+@use"../global/" as g;
+
+.c-entry-button {
+    width: 290rem;
+
+    @include g.mq(){
+        width: 355rem;
+        background-color:red;
+    }
+
+}
+
+.c-entry-button-link {
+
+}
+
+.c-entry-button-text {
+
+}
+
+// 2:31まで視聴
+

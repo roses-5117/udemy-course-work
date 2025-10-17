@@ -367,6 +367,16 @@ html {
   --dot-size:4rem;
 }
 
+.c-entry-button {
+  width: 290rem;
+}
+@media screen and (min-width: 900px) {
+  .c-entry-button {
+    width: 355rem;
+    background-color: red;
+  }
+}
+
 .l-container-s {
   padding-inline: 20rem;
 }
