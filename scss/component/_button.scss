@@ -7,7 +7,8 @@
     color: var(--color-primary);
     font-size: 18rem;
 
-    @include g.mq(){
+    // 修正: @include を追記
+    @include g.mq(){ 
         font-size: 20rem;
     }
 }

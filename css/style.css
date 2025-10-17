@@ -31,6 +31,15 @@ h6 {
   font-weight: inherit;
 }
 
+button {
+  border-radius: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 :root {
   --base-vw: 375;
 }
@@ -163,6 +172,19 @@ body {
   aspect-ratio: 1/1;
   border-radius: 50%;
   background-color: var(--color-primary);
+}
+
+.c-button {
+  display: inline-block;
+  font-family: var(--font-family-en);
+  line-height: 1;
+  color: var(--color-primary);
+  font-size: 18rem;
+}
+@media screen and (min-width: 900px) {
+  .c-button {
+    font-size: 20rem;
+  }
 }
 
 .l-container-s {
