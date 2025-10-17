@@ -21,6 +21,78 @@
   --z-index-negative: -1;
 }
 
+/*!
+foundation > reset
+------------------------------
+*/
+html {
+  color: #000;
+  background: #fff;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: inherit;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
 h1,
 h2,
 h3,
@@ -31,8 +103,58 @@ h6 {
   font-weight: inherit;
 }
 
+q:before,
+q:after {
+  content: "";
+}
+
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+input,
+textarea,
+select,
 button {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  font-size: 100%;
   border-radius: 0;
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: inherit;
+}
+
+textarea {
+  resize: vertical;
+  display: block;
+}
+
+select {
+  cursor: pointer;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+}
+
+legend {
+  color: inherit;
+}
+
+tbody {
+  -webkit-text-size-adjust: 100%;
+}
+
+main {
+  display: block;
 }
 
 a {
@@ -40,6 +162,50 @@ a {
   color: inherit;
 }
 
+img,
+svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+dialog {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 0;
+  color: inherit;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+summary {
+  display: block;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+iframe {
+  vertical-align: bottom;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*!
+foundation > base
+------------------------------
+*/
 :root {
   --base-vw: 375;
 }
@@ -51,23 +217,6 @@ a {
 
 html {
   font-size: calc(100vw / var(--base-vw));
-}
-
-body {
-  line-height: 1.7;
-  font-size: 16rem;
-  font-family: var(--font-family-base);
-  color: var(--color-font-base);
-  font-weight: 500;
-}
-@media screen and (min-width: 900px) {
-  body {
-    font-size: 18rem;
-  }
-}
-
-* {
-  letter-spacing: 0.05em;
 }
 
 .u-visually-hidden {
@@ -175,16 +324,47 @@ body {
 }
 
 .c-button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  --gap: 14rem;
   font-family: var(--font-family-en);
   line-height: 1;
   color: var(--color-primary);
-  font-size: 18rem;
+  --font-size: 18rem;
+  gap: var(--gap);
+  font-size: var(--font-size);
 }
 @media screen and (min-width: 900px) {
   .c-button {
     font-size: 20rem;
+    gap: 24rem;
   }
+}
+.c-button:after {
+  --size:47rem;
+  --dot-size:5rem;
+  content: "";
+  display: block;
+  width: var(--size);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  border: calc((var(--size) - var(--dot-size)) / 2) solid var(--color-primary);
+}
+@media screen and (min-width: 900px) {
+  .c-button:after {
+    --size: 58rem;
+    --dot-size:6rem+ ;
+  }
+}
+
+.c-button--small {
+  --font-size: 16rem;
+  --gap: 10rem;
+}
+.c-button--small::after {
+  --size:32rem;
+  --dot-size:4rem;
 }
 
 .l-container-s {
