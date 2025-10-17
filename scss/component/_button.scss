@@ -1,0 +1,13 @@
+@use"../global/" as g;
+
+.c-button{
+    display: inline-block;
+    font-family: var(--font-family-en);
+    line-height: 1;
+    color: var(--color-primary);
+    font-size: 18rem;
+
+    @include g.mq(){
+        font-size: 20rem;
+    }
+}
