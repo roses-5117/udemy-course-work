@@ -349,12 +349,14 @@ html {
   aspect-ratio: 1/1;
   border-radius: 50%;
   background-color: var(--color-white);
-  border: calc((var(--size) - var(--dot-size)) / 2) solid var(--color-primary);
+  border-width: calc((var(--size) - var(--dot-size)) / 2);
+  border-style: solid;
+  border-color: var(--color-primary);
 }
 @media screen and (min-width: 900px) {
   .c-button:after {
     --size: 58rem;
-    --dot-size:6rem+ ;
+    --dot-size:6rem;
   }
 }
 
@@ -373,8 +375,20 @@ html {
 @media screen and (min-width: 900px) {
   .c-entry-button {
     width: 355rem;
-    background-color: red;
   }
+}
+
+.c-entry-button-link {
+  border-radius: 50%;
+  display: block;
+  position: relative;
+}
+
+.c-entry-button-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
 }
 
 .l-container-s {

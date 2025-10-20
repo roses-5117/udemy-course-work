@@ -5,17 +5,22 @@
 
     @include g.mq(){
         width: 355rem;
-        background-color:red;
     }
-
+    
 }
 
 .c-entry-button-link {
+    border-radius: 50%;
+    display: block;
+    position: relative;
 
 }
 
 .c-entry-button-text {
-
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate:  -50% -50%;
 }
 
 // 2:31まで視聴
