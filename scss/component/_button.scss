@@ -28,7 +28,8 @@
         background-color: var(--color-white);
         border-width: calc((var(--size) - var(--dot-size))/2);
         border-style: solid;
-        border-color: var(--color-primary);        
+        border-color: var(--color-primary);  
+        transition: scale 0.3s;      
         
         @include g.mq(){
             --size: 58rem;

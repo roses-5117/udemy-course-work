@@ -352,6 +352,7 @@ html {
   border-width: calc((var(--size) - var(--dot-size)) / 2);
   border-style: solid;
   border-color: var(--color-primary);
+  transition: scale 0.3s;
 }
 @media screen and (min-width: 900px) {
   .c-button:after {
@@ -379,9 +380,24 @@ html {
 }
 
 .c-entry-button-link {
-  border-radius: 50%;
   display: block;
   position: relative;
+}
+@media (any-hover: hover) {
+  .c-entry-button-link:hover .c-button::after {
+    scale: 1.1;
+  }
+}
+.c-entry-button-link img {
+  animation: rotate 20s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: ratate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .c-entry-button-text {

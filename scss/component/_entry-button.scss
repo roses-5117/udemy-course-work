@@ -10,9 +10,32 @@
 }
 
 .c-entry-button-link {
-    border-radius: 50%;
     display: block;
     position: relative;
+
+    @media (any-hover: hover) {
+        &:hover{
+            .c-button{
+                &::after{
+                    scale:1.1;
+                }
+            }
+        }
+        
+    }
+
+    img{
+        animation: rotate 20s linear infinite;
+    }
+
+    @keyframes rotate {
+        from{
+            transform: ratate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
 
 }
 
