@@ -426,6 +426,7 @@ body {
   flex-direction: column;
   gap: 4rem;
   border-bottom: 1rem solid var(--color-border);
+  transition: 0.3s;
 }
 @media screen and (min-width: 900px) {
   .c-news-item-link {
@@ -433,6 +434,11 @@ body {
     gap: 40rem;
     flex-direction: row;
     align-items: center;
+  }
+}
+@media (any-hover: hover) {
+  .c-news-item-link:hover {
+    color: var(--color-primary);
   }
 }
 
