@@ -1,0 +1,78 @@
+@use"../global/" as g;
+
+.c-pagination-nav {
+
+}
+
+.c-pagination-list {
+    display: flex;
+    gap: 6rem;
+    justify-content: center;
+}
+
+.c-pagination-item {
+
+}
+
+.c-pagination-link,
+.c-pagination-number,
+.c-pagination-dots{
+    display: inline-block;
+    width: 40rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display:grid;
+    place-items: center;
+    font-size: 16rem;
+}
+
+.c-pagination-icon--prev {
+    rotate: 180deg;
+}
+
+.c-pagination-link{
+    background-color: var(--color-bg-light);
+    transition: background-color 0.3s, color 0.3s;
+
+    @media(any-hover: hover){
+        &:hover{
+            background-color: var(--color-primary);
+            color: var(--color-white);
+
+            .c-pagination-icon {
+            background-color: var(--color-white);
+        }
+        }
+
+    }
+}
+
+
+.c-pagination-number--current {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+
+}
+
+
+
+.c-pagination-dot-icon {
+    mask-image: url(../img/icon-dots-small.svg);
+    mask-size: contain;
+    mask-position: center;
+    background-color: var(--color-font-base);
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    transition: background-color 0.3s;
+}
+
+.c-pagination-icon{
+    mask-image: url(../img/icon-arrow.svg);
+    mask-size: cover;
+    mask-position: center;
+    background-color: var(--color-font-base);
+    display: block;
+    width: 10rem;
+    aspect-ratio: 1/1;
+}
