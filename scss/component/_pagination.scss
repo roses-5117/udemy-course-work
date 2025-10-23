@@ -1,17 +1,9 @@
 @use"../global/" as g;
 
-.c-pagination-nav {
-
-}
-
 .c-pagination-list {
     display: flex;
     gap: 6rem;
     justify-content: center;
-}
-
-.c-pagination-item {
-
 }
 
 .c-pagination-link,
