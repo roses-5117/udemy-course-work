@@ -11,7 +11,7 @@
 }
 
 :root {
-  --font-family-base: "Noto Serif JP", serif;
+  --font-family-base: "Zen Kaku Gothic New", sans-serif;
   --font-family-en: "Dosis", sans-serif;
 }
 
@@ -518,6 +518,50 @@ body {
   display: block;
   width: 10rem;
   aspect-ratio: 1/1;
+}
+
+.c-form-required {
+  background-color: var(--color-red);
+  color: var(--color-white);
+  display: inline-block;
+  font-size: 13rem;
+  padding: 2rem 8rem;
+  border-radius: 7rem;
+}
+
+.c-form-text {
+  padding: 12rem 8rem;
+  border-radius: 8rem;
+  background-color: var(--color-bg-extra-light);
+  width: 100%;
+}
+.c-form-text::placeholder {
+  color: var(--color font-light);
+}
+.c-form-text:focus {
+  outline: 1px solid var(--color-primary);
+}
+
+.c-form-text--textarea {
+  min-height: 200rem;
+  field-sizing: content;
+}
+
+.c-form-button {
+  font-size: 18rem;
+  line-height: 1;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border-radius: 100vh;
+  padding: 13rem 39rem;
+  border: 1rem solid var(--color-primary);
+  transition: background-color 0.3s, color 0.3s;
+}
+@media (any-hover: hover) {
+  .c-form-button:hover {
+    color: var(--color-primary);
+    background-color: var(--color-white);
+  }
 }
 
 .l-container-s {
