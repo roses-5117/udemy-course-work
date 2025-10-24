@@ -1,0 +1,29 @@
+@use"../global"as g;
+
+.l-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20rem 12rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.l-header-logo {
+    width: 240rem;
+}
+
+.l-header-menu-open-button {
+    background-color:var(--color-primary);
+    border-radius: 50%;
+    width: 50rem;
+    aspect-ratio: 1/1;
+    place-items: center;
+
+    img{
+        width: 24rem;
+    }
+}
+
