@@ -9,7 +9,7 @@ export const initializeHamburgerMenu = () => {
         menu.showModal();
     });
 
-    // closeButton.addEventListener("click",()=>{
-    //     menu.close();
-    // });
+    closeButton.addEventListener("click",()=>{
+        menu.close();
+    });
 };
