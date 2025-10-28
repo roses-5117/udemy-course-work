@@ -15,6 +15,37 @@
     width: 240rem;
 }
 
+dialog.l-header-menu {
+    &::backdrop{
+        // display: none;
+        background-color: white; 
+    }
+}
+
+.l-header-menu-nav {
+
+}
+
+.l-header-menu-list {
+
+}
+
+.l-header-menu-item {
+
+}
+
+.l-header-menu-link {
+
+}
+
+.l-header-menu-text-en {
+
+}
+
+.l-header-menu-text-ja {
+
+}
+
 .l-header-menu-open-button {
     background-color:var(--color-primary);
     border-radius: 50%;
