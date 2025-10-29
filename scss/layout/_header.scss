@@ -73,7 +73,7 @@
     aspect-ratio: 1/1;
     place-items: center;
 
-    @include g.mq{
+    @include g.mq(){
         display: none;
     }
 
