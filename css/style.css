@@ -705,9 +705,19 @@ body {
   top: 0;
   width: 100%;
 }
+@media screen and (min-width: 900px) {
+  .l-header {
+    padding: 24rem 65rem;
+  }
+}
 
 .l-header-logo {
   width: 240rem;
+}
+@media screen and (min-width: 900px) {
+  .l-header-logo {
+    width: 290rem;
+  }
 }
 
 .l-header-menu {
@@ -718,6 +728,15 @@ body {
 .l-header-menu::backdrop {
   display: none;
 }
+@media screen and (min-width: 900px) {
+  .l-header-menu {
+    display: block;
+    position: static;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+  }
+}
 
 .l-header-menu-nav {
   background-color: var(--color-primary);
@@ -727,15 +746,66 @@ body {
   border-radius: 0 0 0 30rem;
   color: var(--color-white);
 }
+@media screen and (min-width: 900px) {
+  .l-header-menu-nav {
+    background-color: transparent;
+    padding: 0;
+    color: var(--color-font-base);
+    border-radius: 0;
+    width: auto;
+  }
+}
 
 .l-header-menu-list {
   display: flex;
   flex-direction: column;
   gap: 16rem;
 }
+@media screen and (min-width: 900px) {
+  .l-header-menu-list {
+    flex-direction: row;
+    gap: 50rem;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .l-header-menu-link-top {
+    display: none !important;
+  }
+}
 
 .l-header-menu-link {
   display: block;
+}
+
+@media screen and (min-width: 900px) {
+  .l-header-menu-link--current {
+    color: var(--color-primary);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .l-header-menu-link-contact {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 10rem 32rem;
+    display: flex;
+    align-items: center;
+    gap: 9rem;
+    border-radius: 100vh;
+  }
+  .l-header-menu-link-contact::before {
+    content: "";
+    display: block;
+    width: 16rem;
+    height: 13rem;
+    mask-image: url("../img/icon-mail.svg");
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    border-color: var(--color-white);
+  }
 }
 
 .l-header-menu-text-en {
@@ -744,11 +814,22 @@ body {
   letter-spacing: 0.025em;
   display: block;
 }
+@media screen and (min-width: 900px) {
+  .l-header-menu-text-en {
+    line-height: 1;
+    font-size: 18rem;
+  }
+}
 
 .l-header-menu-text-ja {
   font-size: 14rem;
   opacity: 0.8;
   display: block;
+}
+@media screen and (min-width: 900px) {
+  .l-header-menu-text-ja {
+    display: none;
+  }
 }
 
 .l-header-menu-open-button,
@@ -758,6 +839,12 @@ body {
   width: 50rem;
   aspect-ratio: 1/1;
   place-items: center;
+}
+@media screen and (min-width: 900px) {
+  .l-header-menu-open-button,
+  .l-header-menu-close-button {
+    display: none;
+  }
 }
 
 .l-header-menu-open-button {
