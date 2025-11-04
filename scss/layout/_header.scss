@@ -89,11 +89,24 @@
     @include g.mq(){
         background-color: var(--color-primary);
         color: var(--color-white);
-        padding: 10rem 32rem;
+        padding: 9rem 31rem;
         display: flex;
         align-items: center;
         gap: 9rem;
         border-radius:100vh ;
+        border: 1rem solid var(--color-primary);
+        transition: background-color 0.3s,color 0.3s;
+        
+        @media (any-hover: hover) {
+            &:hover{
+            background-color: var(--color-white);
+            color: var(--color-primary);
+
+                &::before{
+                    background-color: var(--color-primary);
+                }
+            }  
+        }
 
         &::before{
             content:"";
@@ -106,6 +119,7 @@
             mask-position: center;
             border-color: var(--color-white);
         }
+
     }
 }
 

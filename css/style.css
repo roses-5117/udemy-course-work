@@ -406,7 +406,7 @@ body {
 }
 @keyframes rotate {
   from {
-    transform: ratate(0deg);
+    transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
