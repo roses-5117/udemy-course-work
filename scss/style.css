@@ -904,4 +904,13 @@ body {
   .l-header-menu-link--white {
     color: var(--color-white);
   }
+}
+
+.l-footer {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 54rem 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 24rem;
 }/*# sourceMappingURL=style.css.map */
