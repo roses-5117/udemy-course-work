@@ -1087,4 +1087,27 @@ body {
   letter-spacing: 0.075em;
   font-size: 12rem;
   opacity: 0.7;
+}
+
+.top-kv {
+  background-image: url(../img/top/top-kv-sp.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 485rem;
+  display: flex;
+  align-items: flex-end;
+}
+@media screen and (min-width: 900px) {
+  .top-kv {
+    background-image: url(../img/top/top-kv.jpg);
+    height: 769rem;
+  }
+}
+
+.top-kv-text {
+  display: none;
+}
+
+.top-kv-scroll {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

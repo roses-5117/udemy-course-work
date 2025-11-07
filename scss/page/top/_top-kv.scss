@@ -1,16 +1,21 @@
-@use"../global/" as g;
+@use "../../global" as g;
 
 .top-kv {
-    background-image:url(../img/top/.top-kv-sp.jpg);
+    background-image:url(../img/top/top-kv-sp.jpg);
     background-size: cover;
     background-position: center;
+    height: 485rem;
+    display: flex;
+    align-items: flex-end;
 
     @include g.mq() {
-        background-image: url(../img/top/.top-kv-pc.jpg);
+        background-image: url(../img/top/top-kv.jpg);
+        height: 769rem;
     }
 }
 
 .top-kv-text {
+    display: none;
 
 }
 
@@ -23,6 +28,7 @@
 }
 
 .top-kv-scroll {
+    display: none;
 
 }
 
