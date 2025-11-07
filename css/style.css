@@ -1035,8 +1035,8 @@ body {
   gap: 9rem;
   width: 16rem;
   height: 13rem;
-  -webkit-mask-image: url("../imag/icon-mail.svg");
-          mask-image: url("../imag/icon-mail.svg");
+  -webkit-mask-image: url("../img/icon-mail.svg");
+          mask-image: url("../img/icon-mail.svg");
   -webkit-mask-size: contain;
           mask-size: contain;
   -webkit-mask-repeat: no-repeat;
