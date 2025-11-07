@@ -246,6 +246,15 @@ body {
   margin: -1px !important;
 }
 
+.u-pb {
+  padding-bottom: 64rem !important;
+}
+@media screen and (min-width: 900px) {
+  .u-pb {
+    padding-bottom: 96rem !important;
+  }
+}
+
 .c-title {
   display: inline-grid;
   grid-template-columns: 10rem 1fr;
@@ -710,6 +719,7 @@ body {
 }
 
 .l-header {
+  background-color: var(--color-border);
   display: flex;
   align-items: center;
   justify-content: space-between;
