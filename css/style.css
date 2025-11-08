@@ -906,11 +906,6 @@ body {
   width: 28rem;
 }
 
-body {
-  background-color: #333;
-  height: 1000px !important;
-}
-
 @media screen and (min-width: 900px) {
   .l-header-menu-link--white {
     color: var(--color-white);
