@@ -15,13 +15,21 @@
 }
 
 .top-kv-text {
-    display: none;
-
+    padding: 47rem;
+    color: var(--color-white);
 }
 
 .top-kv-text-en {
+    font-family: var(--font-family-en);
+    line-height: 1.05;
+    font-size: 43rem;
 
+    span{
+        letter-spacing: 0.025em;
+        display: contents;
+    }
 }
+
 
 .top-kv-text-ja {
 
