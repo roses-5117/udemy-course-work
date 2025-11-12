@@ -255,6 +255,15 @@ body {
   }
 }
 
+.u-ptb {
+  padding: 64rem 0 !important;
+}
+@media screen and (min-width: 900px) {
+  .u-ptb {
+    padding: 96rem 0 !important;
+  }
+}
+
 .c-title {
   display: inline-grid;
   grid-template-columns: 10rem 1fr;
@@ -1180,4 +1189,30 @@ body {
   line-height: 1;
   font-size: 15rem;
   writing-mode: vertical-lr;
+}
+
+.top-about {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28rem;
+}
+
+.top-about-content {
+  padding: 0 20rem;
+}
+
+.top-about-message-ja {
+  line-height: 1.6;
+  font-size: 28rem;
+  margin-top: 16rem;
+}
+.top-about-message-ja span {
+  display: block;
+}
+
+.top-about-message-en {
+  margin-top: 16rem;
+  font-size: 15rem;
+  color: var(--color-primary);
+  font-family: var(--font-family-en);
 }/*# sourceMappingURL=style.css.map */

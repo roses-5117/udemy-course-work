@@ -20,3 +20,11 @@
         padding-bottom: 96rem !important;
     }
 }
+
+.u-ptb{
+    padding: 64rem  0 !important;
+
+    @include g.mq() {
+        padding: 96rem 0 !important;
+    }
+}
