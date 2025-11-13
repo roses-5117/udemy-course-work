@@ -1196,9 +1196,21 @@ body {
   grid-template-columns: 1fr;
   gap: 28rem;
 }
+@media screen and (min-width: 900px) {
+  .top-about {
+    grid-template-columns: 50% 1fr;
+    gap: 59rem;
+  }
+}
 
 .top-about-content {
   padding: 0 20rem;
+}
+@media screen and (min-width: 900px) {
+  .top-about-content {
+    padding: 0 0 0 83rem;
+    margin-top: 40rem;
+  }
 }
 
 .top-about-message-ja {
@@ -1209,10 +1221,66 @@ body {
 .top-about-message-ja span {
   display: block;
 }
+@media screen and (min-width: 900px) {
+  .top-about-message-ja {
+    font-size: 34rem;
+  }
+}
 
 .top-about-message-en {
   margin-top: 16rem;
   font-size: 15rem;
   color: var(--color-primary);
   font-family: var(--font-family-en);
+}
+@media screen and (min-width: 900px) {
+  .top-about-message-en {
+    font-size: 16rem;
+  }
+}
+
+.top-about-text {
+  margin-top: 24rem;
+  line-height: 2.2;
+}
+@media screen and (min-width: 900px) {
+  .top-about-text {
+    margin-top: 32rem;
+  }
+}
+.top-about-text span {
+  display: block;
+}
+
+.top-about-button {
+  margin-top: 14rem;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (any-hover: hover) {
+  .top-about-button a:hover:after {
+    scale: 1.1;
+  }
+}
+@media screen and (min-width: 900px) {
+  .top-about-button {
+    margin-top: 40rem;
+  }
+}
+
+.top-about-img {
+  padding-left: 20rem;
+}
+@media screen and (min-width: 900px) {
+  .top-about-img {
+    padding-left: 0;
+  }
+}
+.top-about-img img {
+  border-radius: 10rem 0 10rem 0;
+}
+@media screen and (min-width: 900px) {
+  .top-about-img img {
+    border-radius: 20rem 0 20rem 0;
+  }
 }/*# sourceMappingURL=style.css.map */
