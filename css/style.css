@@ -256,11 +256,11 @@ body {
 }
 
 .u-ptb {
-  padding: 64rem 0 !important;
+  padding-block: 64rem !important;
 }
 @media screen and (min-width: 900px) {
   .u-ptb {
-    padding: 96rem 0 !important;
+    padding-block: 96rem !important;
   }
 }
 
@@ -1283,4 +1283,23 @@ body {
   .top-about-img img {
     border-radius: 20rem 0 20rem 0;
   }
+}
+
+.top-service {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40rem;
+  position: relative;
+}
+.top-service::before {
+  content: "";
+  display: block;
+  height: 500rem;
+  width: 355rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: var(--color-primary);
+  z-index: var(--z-index-negative);
+  border-radius: 0 0 30rem 0;
 }/*# sourceMappingURL=style.css.map */

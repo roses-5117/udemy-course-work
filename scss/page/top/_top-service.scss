@@ -1,0 +1,83 @@
+@use "../../global" as g;
+
+.top-service {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40rem;
+    position: relative;
+
+    &::before{
+        content: "";
+        display: block;
+        height: 500rem;
+        width: 355rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: var(--color-primary);
+        z-index: var(--z-index-negative);
+        border-radius: 0 0 30rem 0;
+    }
+
+}
+
+.u-ptd {
+
+}
+
+.l-container {
+
+}
+
+.c-title {
+
+}
+
+.c-title-white {
+
+}
+
+.c-title-en {
+
+}
+
+.c-title-ja {
+
+}
+
+.c-title-ja--white {
+
+}
+
+.top-service-text {
+
+}
+
+.top-service-list {
+
+}
+
+.top-service-item {
+
+}
+
+.top-service-item-img {
+
+}
+
+.top-service-item-text-ja {
+
+}
+
+.top-service-item-title-en {
+
+}
+
+.top-service-item-text {
+
+}
+
+.top-service-item-button {
+
+}
+
