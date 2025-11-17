@@ -1,0 +1,50 @@
+@use "../../global" as g;
+
+.top-news {
+    padding-top: 40rem; 
+    padding-bottom: 60rem;
+    position: relative;
+
+    &::before{
+        content: "";
+        display: block;
+        width: 265rem;
+        height: 100%;
+        background-color: var(--color-bg-extra-light);
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: var(--z-index-negative);
+        border-radius: 50rem 0 0 0;
+    }
+}
+
+.l-container {
+
+}
+
+.top-news-title {
+
+}
+
+.top-news-list{
+    margin-top: 48rem;
+}
+
+.top-news-button {
+    margin-top: 32rem;
+    display: flex;
+    justify-content: flex-end;
+
+    a{
+        @media (any-hover: hover) {
+            &:hover {
+                &::after{
+                    scale: 1.1;
+                }
+            }
+        }
+    }
+}
+
+
