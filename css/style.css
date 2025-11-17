@@ -1268,11 +1268,14 @@ body {
   grid-template-columns: 1fr;
   gap: 40rem;
   position: relative;
+  padding-block: 64rem;
 }
 @media screen and (min-width: 900px) {
   .top-service {
     grid-template-columns: 1fr 714rem;
     gap: 65rem;
+    padding-top: 64rem;
+    padding-bottom: 96rem;
   }
 }
 .top-service::before {
