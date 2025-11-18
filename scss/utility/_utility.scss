@@ -22,9 +22,9 @@
 }
 
 .u-ptb{
-    padding: 64rem  0 !important;
+    padding-block: 64rem !important;
 
     @include g.mq() {
-        padding: 96rem 0 !important;
+        padding-block: 96rem !important;
     }
 }
