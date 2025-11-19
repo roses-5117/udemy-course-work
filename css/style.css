@@ -126,8 +126,7 @@ button {
   font-size: 100%;
   border-radius: 0;
   border: none;
-  -moz-appearance: none;
-       appearance: none;
+  appearance: none;
   -webkit-appearance: none;
   background-color: inherit;
 }
@@ -519,12 +518,9 @@ body {
 }
 
 .c-pagination-dot-icon {
-  -webkit-mask-image: url(../img/icon-dots-small.svg);
-          mask-image: url(../img/icon-dots-small.svg);
-  -webkit-mask-size: cover;
-          mask-size: cover;
-  -webkit-mask-position: center;
-          mask-position: center;
+  mask-image: url(../img/icon-dots-small.svg);
+  mask-size: cover;
+  mask-position: center;
   background-color: var(--color-font-base);
   display: block;
   width: 10rem;
@@ -533,12 +529,9 @@ body {
 }
 
 .c-pagination-icon {
-  -webkit-mask-image: url(../img/icon-arrow.svg);
-          mask-image: url(../img/icon-arrow.svg);
-  -webkit-mask-size: cover;
-          mask-size: cover;
-  -webkit-mask-position: center;
-          mask-position: center;
+  mask-image: url(../img/icon-arrow.svg);
+  mask-size: cover;
+  mask-position: center;
   background-color: var(--color-font-base);
   display: block;
   width: 10rem;
@@ -559,9 +552,6 @@ body {
   border-radius: 8rem;
   background-color: var(--color-bg-extra-light);
   width: 100%;
-}
-.c-form-text::-moz-placeholder {
-  color: var(--color font-light);
 }
 .c-form-text::placeholder {
   color: var(--color font-light);
@@ -614,14 +604,10 @@ body {
   display: inline-block;
   width: 11rem;
   height: 8rem;
-  -webkit-mask-image: url(../img/icon-arrow.svg);
-          mask-image: url(../img/icon-arrow.svg);
-  -webkit-mask-size: contain;
-          mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-          mask-position: center;
+  mask-image: url(../img/icon-arrow.svg);
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
   background-color: var(--color-font-light);
   margin: 0 10rem;
 }
@@ -847,14 +833,10 @@ body {
     display: block;
     width: 16rem;
     height: 13rem;
-    -webkit-mask-image: url("../img/icon-mail.svg");
-            mask-image: url("../img/icon-mail.svg");
-    -webkit-mask-size: contain;
-            mask-size: contain;
-    -webkit-mask-repeat: no-repeat;
-            mask-repeat: no-repeat;
-    -webkit-mask-position: center;
-            mask-position: center;
+    mask-image: url("../img/icon-mail.svg");
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
     border-color: var(--color-white);
   }
 }
@@ -1039,14 +1021,10 @@ body {
   gap: 9rem;
   width: 16rem;
   height: 13rem;
-  -webkit-mask-image: url("../img/icon-mail.svg");
-          mask-image: url("../img/icon-mail.svg");
-  -webkit-mask-size: contain;
-          mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-          mask-position: center;
+  mask-image: url("../img/icon-mail.svg");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
   background-color: var(--color-white);
   transition: background-color 0.3s;
 }
@@ -1571,60 +1549,57 @@ body {
   }
 }
 
-.about-philosophy-list {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 24rem;
-  margin-top: 48rem;
+.about-staff {
+  position: relative;
+  padding-top: 40rem;
 }
-@media screen and (min-width: 900px) {
-  .about-philosophy-list {
-    margin-top: 64rem;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32rem;
-    padding-inline: 32rem;
-  }
+.about-staff::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 355rem;
+  height: 430rem;
+  background-color: var(--color-primary);
+  border-radius: 0 0 0 50rem;
+  z-index: var(--z-index-negative);
 }
 
-.about-philosophy-item {
-  width: 300rem;
-  aspect-ratio: 1/1;
-  margin-inline: auto;
-  border-radius: 50%;
-  text-align: center;
-  background-color: var(--color-bg-extra-light);
+.about-staff-head {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 16rem;
-}
-@media screen and (min-width: 900px) {
-  .about-philosophy-item {
-    width: 352rem;
-  }
+  gap: 20rem;
 }
 
-.about-philosophy-item-title {
-  font-size: 23rem;
-  letter-spacing: 0.025em;
-  color: var(--color-primary);
-  font-family: var(--font-family--en);
+.about-staff-text {
+  color: var(--color-white);
 }
 
-.about-philosophy-item-text {
-  font-size: 22rem;
-  line-height: 1.6;
-}
-.about-philosophy-item-text span {
-  display: block;
+.about-staff-slider {
+  margin-top: 40rem;
 }
 
-.about-philosophy-item-text02 {
+.about-staff-item {
+  width: 230rem;
+}
+
+.about-staff-item-img img {
+  border-radius: 10rem;
+}
+
+.about-staff-item-position {
   font-size: 14rem;
-  line-height: 1.8;
-  color: var(--color-font-light);
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  margin-top: 16rem;
 }
-.about-philosophy-item-text02 span {
+.about-staff-item-position::before {
+  content: "";
   display: block;
+  width: 8rem;
+  aspect-ratio: 1/1;
+  background-color: var(--color-primary);
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */
