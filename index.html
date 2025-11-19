@@ -1,317 +1,434 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About | Career Launch - 就活スクール</title>
-        <!-- css -->
-        <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Career Launch - 就活スクール</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
 
-        <!-- js -->
-        <script src="js/vendor/gsap.min.js" defer></script>
-        <script src="js/vendor/ScrollTrigger.min.js" defer></script>
-        <script type="module" src="js/main.js"></script>
+    <!-- js -->
+    <script src="js/vendor/gsap.min.js" defer></script>
+    <script src="js/vendor/ScrollTrigger.min.js" defer></script>
+    <script type="module" src="js/main.js"></script>
 
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Noto+Serif+JP:wght@200..900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="l-header">
+      <p class="l-header-logo">
+        <a href="">
+          <img
+            src="img/logo.svg"
+            width="251"
+            height="46"
+            alt="Career Launch 就活スクール"
+            decoding="async"
+          />
+        </a>
+      </p>
 
-        <!-- font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Noto+Serif+JP:wght@200..900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header class="l-header">
-            <p class="l-header-logo">
-                <a href="">
-                    <img src="img/logo.svg" width="251" height="46" alt="Career Launch 就活スクール" decoding="async" />
-                </a>
+      <dialog class="l-header-menu js-header-menu" aria-label="メニュー">
+        <button class="l-header-menu-close-button js-header-menu-close-button">
+          <img
+            src="img/icon-cross.svg"
+            width="28"
+            height="28"
+            alt="メニューを閉じる"
+          />
+        </button>
+
+        <nav class="l-header-menu-nav">
+          <ul class="l-header-menu-list">
+            <li class="l-header-menu-item">
+              <a
+                href="about.html"
+                class="l-header-menu-link l-header-menu-link-top"
+              >
+                <span class="l-header-menu-text-en">Top</span>
+                <span class="l-header-menu-text-ja">トップ</span>
+              </a>
+            </li>
+            <li class="l-header-menu-item">
+              <a
+                href="about.html"
+                class="l-header-menu-link l-header-menu-link--current"
+              >
+                <span class="l-header-menu-text-en">About</span>
+                <span class="l-header-menu-text-ja">私たちについて</span>
+              </a>
+            </li>
+            <li class="l-header-menu-item">
+              <a href="about.html" class="l-header-menu-link">
+                <span class="l-header-menu-text-en">Service</span>
+                <span class="l-header-menu-text-ja">サービス</span>
+              </a>
+            </li>
+            <li class="l-header-menu-item">
+              <a href="about.html" class="l-header-menu-link">
+                <span class="l-header-menu-text-en">News</span>
+                <span class="l-header-menu-text-ja">お知らせ</span>
+              </a>
+            </li>
+            <li class="l-header-menu-item">
+              <a href="about.html" class="l-header-menu-link">
+                <span class="l-header-menu-text-en">Recruit</span>
+                <span class="l-header-menu-text-ja">採用情報</span>
+              </a>
+            </li>
+            <li class="l-header-menu-item">
+              <a
+                href="about.html"
+                class="l-header-menu-link l-header-menu-link-contact"
+              >
+                <span class="l-header-menu-text-en">Contact</span>
+                <span class="l-header-menu-text-ja">お問い合わせ</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </dialog>
+
+      <button class="l-header-menu-open-button js-header-menu-open-button">
+        <img
+          src="img/icon-dots.svg"
+          width="24"
+          height="4"
+          alt="メニューを開く"
+          decoding="async"
+        />
+      </button>
+    </header>
+
+    <main>
+      <div class="top-kv">
+        <div class="top-kv-text l-container">
+          <p class="top-kv-text-en">
+            <span>Shape your future, </span>
+            <span>your way.</span>
+          </p>
+
+          <p class="top-kv-text-ja">自分らしさが、キャリアになる。</p>
+        </div>
+
+        <div class="top-kv-scroll">
+          <div class="top-kv-scroll-hint">
+            <img
+              src="img/top/scroll-hint.svg"
+              width="4"
+              height="90"
+              decoding="async"
+            />
+          </div>
+          <span class="top-kv-scroll-text">Scroll</span>
+        </div>
+      </div>
+
+      <section class="top-about u-ptb l-container">
+        <div class="top-about-content">
+          <h2 class="c-title-small">About</h2>
+          <p class="top-about-message-ja">
+            <span>あなたの「らしさ」が、</span>
+            <span>未来をつくる。</span>
+          </p>
+          <p class="top-about-message-en">
+            Your uniqueness shapes your future.
+          </p>
+          <p class="top-about-text">
+            <span
+              >私たち就活スクールは、学生一人ひとりが自分らしく社会に踏み出せるよう、キャリア形成を全力で支援します。</span
+            >
+            <span
+              >時代が変わっても、自分を理解し、自分の言葉で語れる力は社会で通用します。</span
+            >
+            <span
+              >あなたの“納得のいく一歩”を、私たちと一緒に見つけませんか？</span
+            >
+          </p>
+
+          <div class="top-about-button">
+            <a href="" class="c-button">View more</a>
+          </div>
+        </div>
+        <div class="top-about-img">
+          <picture>
+            <source
+              srcset="../img/top/top-about.jpg"
+              media="
+                        (min-width: 900px)"
+            />
+            <img
+              src="../img/top/top-about-sp.jpg"
+              alt="..."
+              width="355"
+              height="237"
+              decoding="async"
+            />
+          </picture>
+        </div>
+      </section>
+
+      <section class="top-service u-ptd l-container">
+        <div class="">
+          <div class="c-title c-title--white">
+            <span class="c-title-en c-title-en">Service</span>
+            <h2 class="c-title-ja c-title-ja--white">サービス</h2>
+          </div>
+
+          <p class="top-service-text">
+            <span>就活の「不安」を「自信」に変える2つのプログラム。</span>
+            <span
+              >自己理解から実践対策まで、一人ひとりに合わせて丁寧にサポートします。</span
+            >
+          </p>
+        </div>
+
+        <div class="top-service-list">
+          <article class="top-service-item">
+            <a href="">
+              <div class="top-service-item-img">
+                <picture>
+                  <source
+                    srcset="../img/top/top-services.jpg"
+                    media="
+                                    (min-width: 900px)"
+                  />
+                  <img
+                    src="../img/top/top-services-sp.jpg"
+                    alt="..."
+                    width="316"
+                    height="251"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+
+              <h3 class="top-service-item-text-ja">キャリア設計サポート</h3>
+              <span class="top-service-item-title-en"
+                >Ministry of Education</span
+              >
+
+              <p class="top-service-item-text">
+                <span>自己理解からはじまる“納得のいく選択”。</span>
+                <span
+                  >価値観・強み・志向性を明確にし、将来の軸をつくります。</span
+                >
+              </p>
+
+              <div class="top-service-item-button">
+                <span class="c-button c-button--small">View more</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="top-service-item">
+            <a href="">
+              <div class="top-service-item-img">
+                <picture>
+                  <source
+                    srcset="../img/top/top-services02.jpg"
+                    media="
+                                    (min-width: 900px)"
+                  />
+                  <img
+                    src="../img/top/top-services02-sp.jpg"
+                    alt="..."
+                    width="316"
+                    height="251"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+
+              <h3 class="top-service-item-text-ja">実践対策プログラム</h3>
+              <span class="top-service-item-title-en"
+                >Job Preparation Bootcamp</span
+              >
+
+              <p class="top-service-item-text">
+                <span>書ける・話せる・伝わる就活力を。</span>
+                <span
+                  >ES添削、模擬面接、GD演習など、実戦的なサポートを行います。</span
+                >
+              </p>
+
+              <div class="top-service-item-button">
+                <span class="c-button c-button--small">View more</span>
+              </div>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="top-recruit u-pb">
+        <div class="top-recruit-img">
+          <picture>
+            <source
+              srcset="../img/top/top-recruit.jpg"
+              media="
+                        (min-width: 900px)"
+            />
+            <img
+              src="../img/top/top-recruit-sp.jpg"
+              alt="..."
+              width="316"
+              height="251"
+              decoding="async"
+            />
+          </picture>
+          <p class="top-recruit-img-text">Join us</p>
+        </div>
+
+        <div class="top-recruit-content-wrap l-container">
+          <div class="top-recruit-content">
+            <h2 class="c-title-small">Recruit</h2>
+
+            <p class="top-recruit-text">
+              <span>誰かの未来を、</span><span>支える仕事。</span>
             </p>
 
-            <dialog class="l-header-menu js-header-menu" aria-label="メニュー">
-                <button class="l-header-menu-close-button js-header-menu-close-button">
-                    <img src="img/icon-cross.svg" width="28" height="28" alt="メニューを閉じる">
-                </button>
+            <p class="top-recruit-text02">
+              <span>就職活動は、人生の転機。</span>
+              <span>その一歩を支える私たちの仕事には、誇りがあります。</span>
+              <span>受講生一人ひとりと真剣に向き合い、可能性を引き出す、</span>
+              <span>そんな役割に、あなたも参加しませんか？</span>
+            </p>
 
-                <nav class="l-header-menu-nav">
-                    <ul class="l-header-menu-list">
-                        <li class="l-header-menu-item">
-                            <a href="about.html" class="l-header-menu-link l-header-menu-link-top">
-                                <span class="l-header-menu-text-en">Top</span>
-                                <span class="l-header-menu-text-ja">トップ</span>
-                            </a>
-                        </li>
-                        <li class="l-header-menu-item">
-                            <a href="about.html" class="l-header-menu-link l-header-menu-link--current">
-                                <span class="l-header-menu-text-en">About</span>
-                                <span class="l-header-menu-text-ja">私たちについて</span>
-                            </a>
-                        </li>
-                        <li class="l-header-menu-item">
-                            <a href="about.html" class="l-header-menu-link">
-                                <span class="l-header-menu-text-en">Service</span>
-                                <span class="l-header-menu-text-ja">サービス</span>
-                            </a>
-                        </li>
-                        <li class="l-header-menu-item">
-                            <a href="about.html" class="l-header-menu-link">
-                                <span class="l-header-menu-text-en">News</span>
-                                <span class="l-header-menu-text-ja">お知らせ</span>
-                            </a>
-                        </li>
-                        <li class="l-header-menu-item">
-                            <a href="about.html" class="l-header-menu-link">
-                                <span class="l-header-menu-text-en">Recruit</span>
-                                <span class="l-header-menu-text-ja">採用情報</span>
-                            </a>
-                        </li>
-                        <li class="l-header-menu-item">
-                            <a href="about.html" class="l-header-menu-link l-header-menu-link-contact">
-                                <span class="l-header-menu-text-en">Contact</span>
-                                <span class="l-header-menu-text-ja">お問い合わせ</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+            <p class="top-recruit-text-en">
+              <span>Join us in guiding students to their next chapter.</span>
+              <span>Your support could change someone’s future.</span>
+            </p>
+          </div>
 
-            </dialog>
-
-            <button class="l-header-menu-open-button js-header-menu-open-button">
-                <img src="img/icon-dots.svg" width="24" height="4" alt="メニューを開く" decoding="async">
-            </button>
-        </header>
-
-        <main>
-            <div class="top-kv">
-                <div class="top-kv-text l-container">
-                    <p class="top-kv-text-en">
-                        <span>Shape your future, </span>
-                        <span>your way.</span>
-                    </p>
-
-                    <p class="top-kv-text-ja">自分らしさが、キャリアになる。</p>
-                </div>
-
-                <div class="top-kv-scroll">
-                    <div class="top-kv-scroll-hint"><img src="img/top/scroll-hint.svg"  width="4" height="90"  decoding="async"></div>
-                    <span class="top-kv-scroll-text">Scroll</span>
-                </div>
+          <div class="top-recruit-entry-button">
+            <div class="c-entry-button">
+              <a href="" class="c-entry-button-link">
+                <img
+                  src="img\recruit-button-text.svg"
+                  width="356"
+                  height="362"
+                  alt=""
+                />
+                <span class="c-entry-button-text">
+                  <span class="c-button">Entry Form</span>
+                </span>
+              </a>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <section class="top-about u-ptb l-container">
-                <div class="top-about-content">
-                    <h2 class="c-title-small">About</h2>
-                    <p class="top-about-message-ja">
-                        <span>あなたの「らしさ」が、</span>
-                        <span>未来をつくる。</span>
-                    </p>
-                    <p class="top-about-message-en">Your uniqueness shapes your future.</p>
-                    <p class="top-about-text">
-                        <span>私たち就活スクールは、学生一人ひとりが自分らしく社会に踏み出せるよう、キャリア形成を全力で支援します。</span>
-                        <span>時代が変わっても、自分を理解し、自分の言葉で語れる力は社会で通用します。</span>
-                        <span>あなたの“納得のいく一歩”を、私たちと一緒に見つけませんか？</span> 
-                    </p>
+      <section class="top-news l-container">
+        <div class="top-news-title">
+          <div class="c-title">
+            <span class="c-title-en">News</span>
+            <h2 class="c-title-ja">お知らせ</h2>
+          </div>
+        </div>
 
-                    <div class="top-about-button">
-                        <a href="" class="c-button">View more</a>
-                    </div>
-                </div>
-                <div class="top-about-img">
-                    <picture>
-                        <source srcset="../img/top/top-about.jpg" media="
-                        (min-width: 900px)" /> 
-                        <img src="../img/top/top-about-sp.jpg" alt="..." width="355" height="237" decoding="async"/>
-                    </picture>
-                </div>
-            </section>
-            
-            <section class="top-service u-ptd l-container">
-                <div class="">
-                    <div class="c-title c-title-white">
-                        <span class="c-title-en c-title-en">Service</span>
-                        <h2 class="c-title-ja c-title-ja--white">サービス</h2>
-                    </div>
-                    
-                    <p class="top-service-text">
-                        <span>就活の「不安」を「自信」に変える2つのプログラム。</span>
-                        <span>自己理解から実践対策まで、一人ひとりに合わせて丁寧にサポートします。</span>
-                    </p>
-                </div>
-                
-                <div class="top-service-list">
-                    <article class="top-service-item">
-                        <a href="">
-                            <div class="top-service-item-img">
-                                <picture>
-                                    <source srcset="../img/top/top-services.jpg" media="
-                                    (min-width: 900px)" /> 
-                                    <img src="../img/top/top-services-sp.jpg" alt="..." width="316" height="251" decoding="async"/>
-                                </picture>
-                            </div>
-                            
-                            <h3 class="top-service-item-text-ja">キャリア設計サポート</h3>
-                            <span class="top-service-item-title-en">Ministry of Education</span>
-                            
-                            <p class="top-service-item-text">
-                                <span>自己理解からはじまる“納得のいく選択”。</span>
-                                <span>価値観・強み・志向性を明確にし、将来の軸をつくります。</span>
-                            </p>
-                            
-                            <div class="top-service-item-button">
-                                <span class="c-button c-button--small">View more</span>
-                            </div>
-                        </a>
-                    </article>
-                    
-                    <article class="top-service-item">
-                        <a href="">
-                            <div class="top-service-item-img">
-                                <picture>
-                                    <source srcset="../img/top/top-services02.jpg" media="
-                                    (min-width: 900px)" /> 
-                                    <img src="../img/top/top-services02-sp.jpg" alt="..." width="316" height="251" decoding="async"/>
-                                </picture>
-                            </div>
-                            
-                            <h3 class="top-service-item-text-ja">実践対策プログラム</h3>
-                            <span class="top-service-item-title-en">Job Preparation Bootcamp</span>
-                            
-                            <p class="top-service-item-text">
-                                <span>書ける・話せる・伝わる就活力を。</span>
-                                <span>ES添削、模擬面接、GD演習など、実戦的なサポートを行います。</span>
-                            </p>
-                            
-                            <div class="top-service-item-button">
-                                <span class="c-button c-button--small">View more</span>
-                            </div>
-                        </a>
-                    </article>
-                </div>
-            </section>
-            
-            <section class="top-recruit u-pb">
-                <div class="top-recruit-img">
-                    <picture>
-                        <source srcset="../img/top/top-recruit.jpg" media="
-                        (min-width: 900px)" /> 
-                        <img src="../img/top/top-recruit-sp.jpg" alt="..." width="316" height="251" decoding="async"/>
-                    </picture>
-                    <p class="top-recruit-img-text">Join us</p>
-                </div>
-                
-                <div class="top-recruit-content-wrap l-container">
-                    <div class="top-recruit-content">
-                        <h2 class="c-title-small">Recruit</h2>
-                        
-                        <p class="top-recruit-text"><span>誰かの未来を、</span><span>支える仕事。</span></p>
-                        
-                        <p class="top-recruit-text02">
-                            <span>就職活動は、人生の転機。</span>
-                            <span>その一歩を支える私たちの仕事には、誇りがあります。</span>
-                            <span>受講生一人ひとりと真剣に向き合い、可能性を引き出す、</span>
-                            <span>そんな役割に、あなたも参加しませんか？</span>
-                        </p>
-                        
-                        <p class="top-recruit-text-en">
-                            <span>Join us in guiding students to their next chapter.</span>
-                            <span>Your support could change someone’s future.</span>
-                        </p>
-                    </div>
-                    
-                    <div class="top-recruit-entry-button">
-                        <div class="c-entry-button">
-                            <a href="" class="c-entry-button-link">
-                                <img src="img\recruit-button-text.svg" width="356" height="362" alt="">
-                                <span class="c-entry-button-text"> 
-                                    <span class="c-button">Entry Form</span>
-                                </span>
-                            </a>
-                        </div>    
-                    </div>
-                </div>
-            </section>
-            
-            <section class="top-news l-container">
-                <div class="top-news-title">
-                    <div class="c-title">
-                        <span class="c-title-en">News</span>
-                        <h2 class="c-title-ja">お知らせ</h2>
-                    </div>
-                </div>
+        <div class="top-news-list">
+          <article class="c-news-item">
+            <a href="" class="c-news-item-link">
+              <time datetime="2025-06-10" class="c-news-item-date"
+                >2025.06.10</time
+              >
+              <h3 class="c-news-item-title">8月の夏期集中コース申込受付開始</h3>
+            </a>
+          </article>
 
-                <div class="top-news-list">
-                    <article class="c-news-item">
-                        <a href="" class="c-news-item-link">
-                            <time datetime="2025-06-10" class="c-news-item-date">2025.06.10</time>
-                            <h3 class="c-news-item-title">8月の夏期集中コース申込受付開始</h3>
-                        </a>
-                    </article>
+          <article class="c-news-item">
+            <a href="" class="c-news-item-link">
+              <time datetime="2025-06-10" class="c-news-item-date"
+                >2025.06.10</time
+              >
+              <h3 class="c-news-item-title">
+                夜間模擬面接会（6月開催）参加者募集中
+              </h3>
+            </a>
+          </article>
 
-                    <article class="c-news-item">
-                        <a href="" class="c-news-item-link">
-                            <time datetime="2025-06-10" class="c-news-item-date">2025.06.10</time>
-                            <h3 class="c-news-item-title">夜間模擬面接会（6月開催）参加者募集中</h3>
-                        </a>
-                    </article>
+          <article class="c-news-item">
+            <a href="" class="c-news-item-link">
+              <time datetime="2025-06-10" class="c-news-item-date"
+                >2025.06.10</time
+              >
+              <h3 class="c-news-item-title">
+                新オフィス（東京・神田）オープン
+              </h3>
+            </a>
+          </article>
 
-                    <article class="c-news-item">
-                        <a href="" class="c-news-item-link">
-                            <time datetime="2025-06-10" class="c-news-item-date">2025.06.10</time>
-                            <h3 class="c-news-item-title">新オフィス（東京・神田）オープン</h3>
-                        </a>
-                    </article>
+          <article class="c-news-item">
+            <a href="" class="c-news-item-link">
+              <time datetime="2025-06-10" class="c-news-item-date"
+                >2025.06.10</time
+              >
+              <h3 class="c-news-item-title">
+                大学連携キャリアセミナーの実施決定
+              </h3>
+            </a>
+          </article>
+        </div>
 
-                    <article class="c-news-item">
-                        <a href="" class="c-news-item-link">
-                            <time datetime="2025-06-10" class="c-news-item-date">2025.06.10</time>
-                            <h3 class="c-news-item-title">大学連携キャリアセミナーの実施決定</h3>
-                        </a>
-                    </article>
-                </div>
+        <div class="top-news-button">
+          <a href="" class="c-button">View more</a>
+        </div>
+      </section>
+    </main>
 
-                <div class="top-news-button">
-                    <a href="" class="c-button">View more</a>
-                </div>
-            </section>
-        </main>
-        
-        <footer class="l-footer">
-            <div class="l-footer-logo">
-                <a href="">
-                    <img src="img/logo-white.svg"  width="251" height="46" alt="Career Launch 就活スクール" decoding="async" />
-                </a>
-            </div>
+    <footer class="l-footer">
+      <div class="l-footer-logo">
+        <a href="">
+          <img
+            src="img/logo-white.svg"
+            width="251"
+            height="46"
+            alt="Career Launch 就活スクール"
+            decoding="async"
+          />
+        </a>
+      </div>
 
-            <div class="l-footer-info">
-                <p class="l-footer-company">株式会社Career Launch</p>
-                <p class="l-footer-adress">
-                    <span>〒101-0045</span>
-                    <span>東京都千代田区神田鍛冶町3-2-1</span>
-                    <span>神田サクラビル5F</span>
-                </p>
-                <div class="l-footer-contact">
-                    <p>TEL：03-1234-5678</p>
-                    <p>FAX：03-1234-5679</p>
-                </div>
-            </div>
+      <div class="l-footer-info">
+        <p class="l-footer-company">株式会社Career Launch</p>
+        <p class="l-footer-adress">
+          <span>〒101-0045</span>
+          <span>東京都千代田区神田鍛冶町3-2-1</span>
+          <span>神田サクラビル5F</span>
+        </p>
+        <div class="l-footer-contact">
+          <p>TEL：03-1234-5678</p>
+          <p>FAX：03-1234-5679</p>
+        </div>
+      </div>
 
-            <ul class="l-footer-menu-list">
-                <li class="l-footer-menu-item"><a href="about.html"></a>About</li>
-                <li class="l-footer-menu-item"><a href="service.html"></a>Service</li>
-                <li class="l-footer-menu-item"><a href="news.html"></a>News</li>
-                <li class="l-footer-menu-item"><a href="recruit.html"></a>Recruit</li>
-                <li class="l-footer-menu-item l-footer-menu-item--contact"><a href="contact.html"></a>Contact</li>
-            </ul>
-            
-            <div class="l-fooetr-legal">
-                <ul class="l-footer-legal-list">
-                    <li class="l-footer-legal-item"><a href=""></a>Company</li>
-                    <li class="l-footer-legal-item"><a href=""></a>Privacy Policy</li>
-                </ul>
-            </div>
+      <ul class="l-footer-menu-list">
+        <li class="l-footer-menu-item"><a href="about.html"></a>About</li>
+        <li class="l-footer-menu-item"><a href="service.html"></a>Service</li>
+        <li class="l-footer-menu-item"><a href="news.html"></a>News</li>
+        <li class="l-footer-menu-item"><a href="recruit.html"></a>Recruit</li>
+        <li class="l-footer-menu-item l-footer-menu-item--contact">
+          <a href="contact.html"></a>Contact
+        </li>
+      </ul>
 
-            <small class="l-footer-copyright">©2025 株式会社Career Launch</small>
-        </footer>
+      <div class="l-fooetr-legal">
+        <ul class="l-footer-legal-list">
+          <li class="l-footer-legal-item"><a href=""></a>Company</li>
+          <li class="l-footer-legal-item"><a href=""></a>Privacy Policy</li>
+        </ul>
+      </div>
 
-        <!-- <header class="l-header">
+      <small class="l-footer-copyright">©2025 株式会社Career Launch</small>
+    </footer>
+
+    <!-- <header class="l-header">
             <p class="l-header-logo">
                 <a href="">
                     <img src="img/logo-white.svg" width="251" height="46" alt="Career Launch 就活スクール" decoding="async" />
@@ -371,7 +488,7 @@
             </button>
         </header> -->
 
-        <!-- <div class="l-container">
+    <!-- <div class="l-container">
             <div class="c-title">
                 <span class="c-title-en">Philosophy</span>
                 <h2 class="c-title-ja">私たちの価値</h2>
@@ -379,13 +496,13 @@
             <h2 class="c-title-small">About</h2>
         </div> -->
 
-        <!-- <div class="l-container">
+    <!-- <div class="l-container">
             <a href="" class="c-button">View more</a>
             <a href="" class="c-button c-button--small">View more</a>
         </div> -->
 
-        <!-- <div class="l-container"> -->
-            <!-- <div class="c-entry-button">
+    <!-- <div class="l-container"> -->
+    <!-- <div class="c-entry-button">
                 <a href="" class="c-entry-button-link">
                     <img src="img\recruit-button-text.svg" width="356" height="362" alt="">
                     <span class="c-entry-button-text"> 
@@ -395,14 +512,14 @@
                     </span>
                 </a>
             </div> -->
-            <!-- <article class="c-news-item">
+    <!-- <article class="c-news-item">
                 <a href="" class="c-news-item-link">
                     <time datetime="2025-06-10" class="c-news-item-date">2025.06.10</time>
                     <h2 class="c-news-item-title">8月の夏期集中コース申込受付開始</h2>
                 </a>
             </article> -->
 
-            <!-- <div class="c-pagination">
+    <!-- <div class="c-pagination">
                 <nav class="c-pagination-nav">
                     <ul class="c-pagination-list">
                         <li class="c-pagination-item">
@@ -444,16 +561,16 @@
                 </nav>
             </div> -->
 
-            <!-- テキスト送信パーツ -->
-            <!-- <span class="c-form-required">必須</span>
+    <!-- テキスト送信パーツ -->
+    <!-- <span class="c-form-required">必須</span>
             <br />
 
             <input type=" text" name="" id="" class="c-form-text" placeholder="山田 太郎">
             <textarea name="" id="" placeholder="ご自由にご記入ください。" class="c-form-text c-form-text--textarea"></textarea>
             <button type="submit" class="c-form-button">送信する</button> -->
-        
-            <!-- パンくずリスト作成 -->
-            <!-- <ol class="c-breadcrumb">
+
+    <!-- パンくずリスト作成 -->
+    <!-- <ol class="c-breadcrumb">
                 <li class="c-breadcrumb-item">
                     <a href="">
                         Top
@@ -466,7 +583,7 @@
                 </li>
             </ol> -->
 
-            <!-- <div class="c-page-kv">
+    <!-- <div class="c-page-kv">
                 <div class="l-container">
                     <div class="c-page-kv-inner">
                         <div class="c-page-kv-title-wrap">
@@ -493,6 +610,6 @@
 
                 </div>
             </div> -->
-        <!-- </div> -->
-    </body>
+    <!-- </div> -->
+  </body>
 </html>
