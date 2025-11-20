@@ -313,7 +313,6 @@ body {
 .c-title-ja {
   line-height: 1;
   font-size: 14rem;
-  font-weight: 400;
   color: var(--color-font-light);
   grid-column: 2/3;
   grid-row: 2/3;
@@ -1724,4 +1723,31 @@ body {
   .about-staff-item-name-en {
     font-size: 15rem;
   }
+}
+
+.about-company {
+  background: var(--color-bg-extra-light);
+}
+
+.about-company-title {
+  margin-top: 40rem;
+}
+.about-company-title img {
+  border-radius: 10rem;
+}
+
+.about-company-img {
+  margin-top: 40rem;
+}
+
+.about-company-table {
+  margin-top: 16rem;
+}
+
+.about-company-table-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 16rem 8rem;
+  border-bottom: 1rem solid var(--color-border);
 }/*# sourceMappingURL=style.css.map */

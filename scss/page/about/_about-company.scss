@@ -1,0 +1,35 @@
+@use "../../global" as g;
+
+.about-company {
+    background: var(--color-bg-extra-light);
+}
+
+.about-company-title {
+    margin-top: 40rem;
+
+    img{
+        border-radius: 10rem;
+    }
+}
+
+.about-company-img {
+    margin-top: 40rem;
+}
+
+.about-company-table {
+    margin-top: 16rem;
+}
+
+.about-company-table-body {
+
+}
+
+.about-company-table-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 16rem 8rem;
+    border-bottom: 1rem solid var(--color-border) ;
+}
+
+
