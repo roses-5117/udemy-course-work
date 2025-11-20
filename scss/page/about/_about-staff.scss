@@ -4,6 +4,10 @@
     position: relative;
     padding-top: 40rem;
 
+    @include g.mq() {
+        margin-top: 54rem;
+    }
+
     &::before{
         content: "";
         display: block;
@@ -15,6 +19,13 @@
         background-color: var(--color-primary);
         border-radius: 0 0 0 50rem;
         z-index: var(--z-index-negative);
+
+        @include g.mq() {
+            height: 390rem;
+            width: 1326rem;
+            left: auto;
+            right: 0;
+        }
     }
 }
 
@@ -22,6 +33,12 @@
     display: flex;
     flex-direction: column;
     gap: 20rem;
+
+    @include g.mq() {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
 }
 
 
@@ -31,15 +48,30 @@
 }
 
 .about-staff-slider {
+    // 後で消す
+    margin-left: 20rem;
     margin-top: 40rem;
+    // 後で消す
+    overflow: hidden;
+
+    @include g.mq() {
+        margin-top: 64rem;
+    }
 }
 
 .about-staff-list {
-
+    ul{
+        display: flex;
+        gap: 32rem;
+    }
 }
 
 .about-staff-item {
     width: 230rem;
+
+    @include g.mq() {
+        width: 285rem;
+    }
 }
 
 .about-staff-item-img {
@@ -66,14 +98,27 @@
 }
 
 .about-staff-item-name {
-
+    display: flex;
+    align-items: center;
+    gap: 16rem;
 }
 
 .about-staff-item-name-ja {
+    font-size: 20rem;
+    letter-spacing: 0.075em;
 
+    @include g.mq() {
+        font-size: 24rem;
+    }
 }
 
 .about-staff-item-name-en {
+    font-size: 14rem;
+    color: var(--color-font-light);
+    font-family: var(-font-family-en);
 
+    @include g.mq() {
+        font-size: 15rem;
+    }
 }
 
