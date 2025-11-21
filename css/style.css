@@ -1612,7 +1612,7 @@ body {
 }
 @media screen and (min-width: 900px) {
   .about-staff {
-    margin-top: 54rem;
+    padding-top: 54rem;
   }
 }
 .about-staff::before {
@@ -1651,6 +1651,7 @@ body {
 
 .about-staff-text {
   color: var(--color-white);
+  font-size: 16rem;
 }
 
 .about-staff-slider {
@@ -1660,7 +1661,7 @@ body {
 }
 @media screen and (min-width: 900px) {
   .about-staff-slider {
-    margin-top: 64rem;
+    margin-top: 54rem;
   }
 }
 

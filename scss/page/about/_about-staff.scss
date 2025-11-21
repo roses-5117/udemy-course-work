@@ -5,7 +5,7 @@
     padding-top: 40rem;
 
     @include g.mq() {
-        margin-top: 54rem;
+        padding-top: 54rem;
     }
 
     &::before{
@@ -45,6 +45,7 @@
 
 .about-staff-text {
     color: var(--color-white);
+    font-size: 16rem;
 }
 
 .about-staff-slider {
@@ -55,7 +56,7 @@
     overflow: hidden;
 
     @include g.mq() {
-        margin-top: 64rem;
+        margin-top: 54rem;
     }
 }
 
