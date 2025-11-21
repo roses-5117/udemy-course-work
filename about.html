@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Career Launch - 就活スクール</title>
+    
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- js -->
+    <script src="js/vendor/gsap.min.js" defer></script>
+    <script src="js/vendor/ScrollTrigger.min.js" defer></script>
+    <script type="module" src="js/main.js"></script>
+
+
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Noto+Serif+JP:wght@200..900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Noto+Serif+JP:wght@200..900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -70,7 +81,7 @@
             </button>
     </header>
 
-    <main class="u-pb">
+    <main>
         <div class="c-page-kv">
             <div class="l-container">
                 <div class="c-page-kv-inner">
@@ -98,6 +109,166 @@
 
             </div>
         </div>
+
+        <section class="about-philosophy u-pb l-container">
+            <div class="c-title">
+                <span class="c-title-en">Philosophy</span>
+                <h2 class="c-title-ja">私たちの価値</h2>
+            </div>
+
+            <div class="about-philosophy-list">
+                <section class="about-philosophy-item">
+                    <h3 class="about-philosophy-item-title">Mission</h3>
+                    <p class="about-philosophy-item-text">
+                        <span>一人ひとりと</span>
+                        <span>真剣に向き合う</span>
+                    </p>
+                    <p class="about-philosophy-item-text02">
+                        <span>学生の可能性を最大限</span>
+                        <span>引き出すパートナーとして</span>
+                    </p>
+                </section>
+                <section class="about-philosophy-item">
+                    <h3 class="about-philosophy-item-title">Vision</h3>
+                    <p class="about-philosophy-item-text">
+                        <span>自分らしく社会で</span>
+                        <span>活躍する人材を育成</span>
+                    </p>
+                    <p class="about-philosophy-item-text02">
+                        <span>納得のいくキャリア選択が</span>
+                        <span>できる未来を創る</span>
+                    </p>
+                </section>
+                <section class="about-philosophy-item">
+                    <h3 class="about-philosophy-item-title">Value</h3>
+                    <p class="about-philosophy-item-text">
+                        <span>『らしさ』を大切にした</span>
+                        <span>キャリア形成</span>
+                    </p>
+                    <p class="about-philosophy-item-text02">
+                        <span>型にはめない</span>
+                        <span>その人だけの強みを見つける</span>
+                    </p>
+                </section>
+            </div>
+        </section>
+
+        <section class="about-staff u-pb">
+            <div class="about-staff-head l-container">
+                <div class="c-title c-title--white">
+                    <span class="c-title-en c-title-en--white">Staff</span>
+                    <h2 class="c-title-ja c-title-ja--white">スタッフ紹介</h2>  
+                </div>
+                <p class="about-staff-text">一人ひとりの個性を大切にしながら、あなたの可能性を最大限に引き出します。</p>
+            </div>
+
+            <div class="about-staff-slider">
+                <div class="about-staff-list">
+                    <ul>
+                        <li>
+                            <div class="about-staff-item">
+                                <div class="about-staff-item-img">
+                                    <img src="img/about/staffs.jpg" alt="" width="230" height="230">
+                                </div>
+    
+                                <p class="about-staff-item-position">
+                                    代表・キャリアカウンセラー
+                                </p>
+    
+                                <div class="about-staff-item-name">
+                                    <p class="about-staff-item-name-ja">田中 美咲</p>
+                                    <span class="about-staff-item-name-en">Misaki Tanaka</span>
+                                </div>
+                            </div>
+                        </li>  
+
+                        <li class="splide__slide">
+                            <div class="about-staff-item">
+                                <div class="about-staff-item-img">
+                                    <img src="img/about/staffs03.jpg" width="900" height="900" alt="(本来は設定する)" decoding="async" />
+                                </div>
+
+                                <p class="about-staff-item-position">面接対策講師</p>
+
+                                <div class="about-staff-item-name">
+                                    <p class="about-staff-item-name-ja">佐藤 雄一</p>
+                                    <span class="about-staff-item-name-en">Yuichi Sato</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="splide__slide">
+                            <div class="about-staff-item">
+                                <div class="about-staff-item-img">
+                                    <img src="img/about/staffs04.jpg" width="900" height="900" alt="(本来は設定する)" decoding="async" />
+                                </div>
+
+                                <p class="about-staff-item-position">ES添削講師</p>
+
+                                <div class="about-staff-item-name">
+                                    <p class="about-staff-item-name-ja">山田 恵子</p>
+                                    <span class="about-staff-item-name-en">Keiko Yamada</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="splide__slide">
+                            <div class="about-staff-item">
+                                <div class="about-staff-item-img">
+                                    <img src="img/about/staffs05.jpg" width="900" height="900" alt="(本来は設定する)" decoding="async" />
+                                </div>
+
+                                <p class="about-staff-item-position">IT業界専門講師</p>
+
+                                <div class="about-staff-item-name">
+                                    <p class="about-staff-item-name-ja">鈴木 健太</p>
+                                    <span class="about-staff-item-name-en">Keita Suzuki</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ull>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-company u-ptb l-container">
+            <div class="about-company-title">
+                <div class="c-title">
+                    <span class="c-title-en">Company</span>
+                    <h2 class="c-title-ja">会社概要</h2>  
+                </div>
+            </div>
+
+            <div class="about-company-img">
+                <img src="img/about/office.jpg" alt="" width="335" height="223">
+            </div>
+
+            <table class="about-company-table"  aria-label="会社概要">
+                <tbody class="about-company-table-body">
+                    <tr class="about-company-table-item">
+                        <th>会社名</th>
+                        <td>株式会社Career Launch</td>
+                    </tr>
+
+                    <tr class="about-company-table-item">
+                        <th>住所</th>
+                        <td>〒101-0045
+                            東京都千代田区神田鍛冶町3-2-1 神田サクラビル5F</td>
+                    </tr>
+
+                    <tr class="about-company-table-item">
+                        <th>代表者</th>
+                        <td>田中美咲</td>
+                    </tr>
+
+                    <tr class="about-company-table-item">
+                        <th>電話番号</th>
+                        <td>03-1234-5678</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
     </main>
 
     <footer class="l-footer">
