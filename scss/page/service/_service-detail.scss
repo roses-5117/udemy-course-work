@@ -133,6 +133,7 @@
 
     @include g.mq() {
         font-size: 16rem;
+        padding: 20rem 24rem;
     }
 
     &::before{

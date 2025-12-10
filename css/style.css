@@ -1944,6 +1944,7 @@ body {
 @media screen and (min-width: 900px) {
   .service-detail-list-item {
     font-size: 16rem;
+    padding: 20rem 24rem;
   }
 }
 .service-detail-list-item::before {
