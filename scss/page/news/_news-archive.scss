@@ -1,0 +1,13 @@
+@use "../../global" as g;
+
+.news-archive{
+    margin-top: -16rem;
+
+    @include g.mq() {
+        margin-top: -24rem;
+    }
+}
+
+.news-archive-page-naition{
+    margin-top: 48rem;
+}

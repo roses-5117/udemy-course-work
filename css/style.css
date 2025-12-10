@@ -2014,4 +2014,17 @@ body {
   margin-top: 8rem;
   display: flex;
   justify-content: flex-end;
+}
+
+.news-archive {
+  margin-top: -16rem;
+}
+@media screen and (min-width: 900px) {
+  .news-archive {
+    margin-top: -24rem;
+  }
+}
+
+.news-archive-page-naition {
+  margin-top: 48rem;
 }/*# sourceMappingURL=style.css.map */
