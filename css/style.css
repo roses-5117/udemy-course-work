@@ -1957,4 +1957,60 @@ body {
   mask-repeat: no-repeat;
   mask-position: center;
   background-color: var(--color-white);
+}
+
+.service-case-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40rem;
+  margin-top: 40rem;
+}
+@media screen and (min-width: 900px) {
+  .service-case-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 39rem;
+    margin-top: 54rem;
+  }
+}
+
+@media (any-hover: hover) {
+  .service-case-item a:hover .service-case-item-img img {
+    scale: 1.03;
+  }
+  .service-case-item a:hover .c-button::after {
+    scale: 1.1;
+  }
+}
+
+.service-case-item-img {
+  border-radius: 10rem;
+  overflow: hidden;
+}
+@media screen and (min-width: 900px) {
+  .service-case-item-img {
+    border-radius: 12rem;
+  }
+}
+.service-case-item-img img {
+  transition: scale 0.3s;
+}
+
+.service-case-item-title {
+  margin-top: 14rem;
+  letter-spacing: 0.075em;
+  font-size: 14rem;
+}
+.service-case-item-title span {
+  color: var(--color-font-light);
+}
+
+.service-case-item-text {
+  margin-top: 8rem;
+  line-height: 1.6;
+}
+
+.service-case-item-button {
+  margin-top: 8rem;
+  display: flex;
+  justify-content: flex-end;
 }/*# sourceMappingURL=style.css.map */
