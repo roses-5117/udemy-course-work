@@ -2078,4 +2078,52 @@ body {
 
 .recruit-position-text {
   margin-top: 14rem;
+}
+
+.recruit-benefit {
+  background-color: var(--color-bg-extra-light);
+}
+
+.recruit-benefit-table {
+  margin-top: 24rem;
+}
+@media screen and (min-width: 900px) {
+  .recruit-benefit-table {
+    margin-top: 40rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .recruit-benefit-table-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 32rem;
+  }
+}
+
+.recruit-benefit-table-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 16rem 8rem;
+  border-bottom: 1rem solid var(--color-border);
+}
+@media screen and (min-width: 900px) {
+  .recruit-benefit-table-item {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 0 34rem;
+    padding: 24rem 8rem;
+    align-items: center;
+  }
+}
+.recruit-benefit-table-item th {
+  font-size: 14rem;
+  letter-spacing: 0.125em;
+  color: var(--color-font-light);
+}
+@media screen and (min-width: 900px) {
+  .recruit-benefit-table-item th {
+    font-size: 16rem;
+  }
 }/*# sourceMappingURL=style.css.map */
