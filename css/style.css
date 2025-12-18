@@ -363,6 +363,7 @@ body {
   --font-size: 18rem;
   gap: var(--gap);
   font-size: var(--font-size);
+  white-space: nowrap;
 }
 @media screen and (min-width: 900px) {
   .c-button {
@@ -2146,4 +2147,9 @@ body {
     border-radius: 12rem;
     width: 335rem;
   }
+}
+
+.recruit-entry {
+  display: grid;
+  place-items: center;
 }/*# sourceMappingURL=style.css.map */

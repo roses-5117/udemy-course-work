@@ -10,6 +10,7 @@
     --font-size: 18rem;
     gap: var(--gap);
     font-size: var(--font-size);
+    white-space: nowrap;
 
     // 修正: @include を追記
     @include g.mq(){ 
