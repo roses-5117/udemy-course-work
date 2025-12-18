@@ -1,0 +1,30 @@
+@use "../../global" as g;
+.recruit-culture {
+
+}
+
+
+.recruit-culture-gallery {
+    margin-top: 40rem;
+    overflow: hidden;
+}
+
+.recruit-culture-gallery-list {
+    display: flex;
+    gap:10rem ;
+
+    img{
+        border-radius: 10rem;
+        width: 223rem;
+
+        @include g.mq() {
+            border-radius: 12rem;
+            width: 335rem;
+        }
+    }
+}
+
+.splide__slide {
+
+}
+
