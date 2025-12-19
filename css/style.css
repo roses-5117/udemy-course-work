@@ -2152,4 +2152,70 @@ body {
 .recruit-entry {
   display: grid;
   place-items: center;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24rem;
+}
+@media screen and (min-width: 900px) {
+  .contact-form {
+    gap: 32rem;
+    grid-template-columns: auto 1fr;
+  }
+}
+
+.contact-form-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6rem;
+}
+@media screen and (min-width: 900px) {
+  .contact-form-item {
+    grid-template-columns: subgrid;
+    grid-column: 1/-1;
+    align-items: start;
+    gap: 64rem;
+  }
+}
+
+.contact-form-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (min-width: 900px) {
+  .contact-form-label {
+    justify-content: flex-start;
+    gap: 8rem;
+    margin-top: 14rem;
+  }
+}
+
+.contact-form-item--submit {
+  gap: 16rem;
+}
+@media screen and (min-width: 900px) {
+  .contact-form-item--submit {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact-form-consent {
+  text-align: center;
+  font-size: 14rem;
+}
+.contact-form-consent a {
+  text-decoration: underline;
+}
+@media (any-hover: hover) {
+  .contact-form-consent a:hover {
+    text-decoration: none;
+  }
+}
+
+.contact-form-button {
+  display: grid;
+  place-items: center;
 }/*# sourceMappingURL=style.css.map */
