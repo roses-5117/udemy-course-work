@@ -2152,4 +2152,8 @@ body {
 .recruit-entry {
   display: grid;
   place-items: center;
+}
+
+.contact-form {
+  color: red;
 }/*# sourceMappingURL=style.css.map */
