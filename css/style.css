@@ -363,6 +363,7 @@ body {
   --font-size: 18rem;
   gap: var(--gap);
   font-size: var(--font-size);
+  white-space: nowrap;
 }
 @media screen and (min-width: 900px) {
   .c-button {
@@ -2027,4 +2028,128 @@ body {
 
 .news-archive-page-naition {
   margin-top: 48rem;
+}
+
+.recruit-position-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16rem;
+  margin-top: 40rem;
+}
+@media screen and (min-width: 900px) {
+  .recruit-position-list {
+    margin-top: 54rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60rem;
+  }
+}
+
+.recruit-position-item {
+  border-radius: 11rem;
+  border: 1rem solid var(--color-border);
+  padding: 31rem 19rem;
+}
+@media screen and (min-width: 900px) {
+  .recruit-position-item {
+    padding: 39rem;
+  }
+}
+
+.recruit-position-title-ja {
+  font-size: 20rem;
+}
+@media screen and (min-width: 900px) {
+  .recruit-position-title-ja {
+    font-size: 28rem;
+  }
+}
+
+.recruit-position-title-en {
+  font-size: 15rem;
+  margin-top: 4rem;
+  display: block;
+  color: var(--color-primary);
+  font-family: var(--font-family-en);
+}
+@media screen and (min-width: 900px) {
+  .recruit-position-title-en {
+    font-size: 16rem;
+  }
+}
+
+.recruit-position-text {
+  margin-top: 14rem;
+}
+
+.recruit-benefit {
+  background-color: var(--color-bg-extra-light);
+}
+
+.recruit-benefit-table {
+  margin-top: 24rem;
+}
+@media screen and (min-width: 900px) {
+  .recruit-benefit-table {
+    margin-top: 40rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .recruit-benefit-table-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 32rem;
+  }
+}
+
+.recruit-benefit-table-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 16rem 8rem;
+  border-bottom: 1rem solid var(--color-border);
+}
+@media screen and (min-width: 900px) {
+  .recruit-benefit-table-item {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 0 34rem;
+    padding: 24rem 8rem;
+    align-items: center;
+  }
+}
+.recruit-benefit-table-item th {
+  font-size: 14rem;
+  letter-spacing: 0.125em;
+  color: var(--color-font-light);
+}
+@media screen and (min-width: 900px) {
+  .recruit-benefit-table-item th {
+    font-size: 16rem;
+  }
+}
+
+.recruit-culture-gallery {
+  margin-top: 40rem;
+  overflow: hidden;
+}
+
+.recruit-culture-gallery-list {
+  display: flex;
+  gap: 10rem;
+}
+.recruit-culture-gallery-list img {
+  border-radius: 10rem;
+  width: 223rem;
+}
+@media screen and (min-width: 900px) {
+  .recruit-culture-gallery-list img {
+    border-radius: 12rem;
+    width: 335rem;
+  }
+}
+
+.recruit-entry {
+  display: grid;
+  place-items: center;
 }/*# sourceMappingURL=style.css.map */
