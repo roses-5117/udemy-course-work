@@ -126,8 +126,7 @@ button {
   font-size: 100%;
   border-radius: 0;
   border: none;
-  -moz-appearance: none;
-       appearance: none;
+  appearance: none;
   -webkit-appearance: none;
   background-color: inherit;
 }
@@ -261,6 +260,19 @@ body {
 @media screen and (min-width: 900px) {
   .u-ptb {
     padding-block: 96rem !important;
+  }
+}
+
+.u-text-hover {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0 1px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s;
+}
+@media screen and (min-width: 900px) and (any-hover: hover) {
+  .u-text-hover:hover {
+    background-size: 100% 1px;
   }
 }
 
@@ -519,12 +531,9 @@ body {
 }
 
 .c-pagination-dot-icon {
-  -webkit-mask-image: url(../img/icon-dots-small.svg);
-          mask-image: url(../img/icon-dots-small.svg);
-  -webkit-mask-size: cover;
-          mask-size: cover;
-  -webkit-mask-position: center;
-          mask-position: center;
+  mask-image: url(../img/icon-dots-small.svg);
+  mask-size: cover;
+  mask-position: center;
   background-color: var(--color-font-base);
   display: block;
   width: 10rem;
@@ -533,12 +542,9 @@ body {
 }
 
 .c-pagination-icon {
-  -webkit-mask-image: url(../img/icon-arrow.svg);
-          mask-image: url(../img/icon-arrow.svg);
-  -webkit-mask-size: cover;
-          mask-size: cover;
-  -webkit-mask-position: center;
-          mask-position: center;
+  mask-image: url(../img/icon-arrow.svg);
+  mask-size: cover;
+  mask-position: center;
   background-color: var(--color-font-base);
   display: block;
   width: 10rem;
@@ -559,9 +565,6 @@ body {
   border-radius: 8rem;
   background-color: var(--color-bg-extra-light);
   width: 100%;
-}
-.c-form-text::-moz-placeholder {
-  color: var(--color font-light);
 }
 .c-form-text::placeholder {
   color: var(--color font-light);
@@ -614,14 +617,10 @@ body {
   display: inline-block;
   width: 11rem;
   height: 8rem;
-  -webkit-mask-image: url(../img/icon-arrow.svg);
-          mask-image: url(../img/icon-arrow.svg);
-  -webkit-mask-size: contain;
-          mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-          mask-position: center;
+  mask-image: url(../img/icon-arrow.svg);
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
   background-color: var(--color-font-light);
   margin: 0 10rem;
 }
@@ -847,14 +846,10 @@ body {
     display: block;
     width: 16rem;
     height: 13rem;
-    -webkit-mask-image: url("../img/icon-mail.svg");
-            mask-image: url("../img/icon-mail.svg");
-    -webkit-mask-size: contain;
-            mask-size: contain;
-    -webkit-mask-repeat: no-repeat;
-            mask-repeat: no-repeat;
-    -webkit-mask-position: center;
-            mask-position: center;
+    mask-image: url("../img/icon-mail.svg");
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
     border-color: var(--color-white);
   }
 }
@@ -1039,14 +1034,10 @@ body {
   gap: 9rem;
   width: 16rem;
   height: 13rem;
-  -webkit-mask-image: url("../img/icon-mail.svg");
-          mask-image: url("../img/icon-mail.svg");
-  -webkit-mask-size: contain;
-          mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-          mask-position: center;
+  mask-image: url("../img/icon-mail.svg");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
   background-color: var(--color-white);
   transition: background-color 0.3s;
 }
@@ -1976,14 +1967,10 @@ body {
   flex-shrink: 0;
   width: 24rem;
   aspect-ratio: 1/1;
-  -webkit-mask-image: url(../img/icon-check.svg);
-          mask-image: url(../img/icon-check.svg);
-  -webkit-mask-size: contain;
-          mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-          mask-position: center;
+  mask-image: url(../img/icon-check.svg);
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
   background-color: var(--color-white);
 }
 
