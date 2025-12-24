@@ -49,23 +49,21 @@
 }
 
 .about-staff-slider {
-    // 後で消す
-    margin-left: 20rem;
     margin-top: 40rem;
     // 後で消す
-    overflow: hidden;
+    // overflow: hidden;
 
     @include g.mq() {
-        margin-top: 54rem;
+        margin-top: 64rem;
     }
 }
 
-.about-staff-list {
-    ul{
-        display: flex;
-        gap: 32rem;
-    }
-}
+// .about-staff-list {
+//     ul{
+//         display: flex;
+//         gap: 32rem;
+//     }
+// }
 
 .about-staff-item {
     width: 230rem;

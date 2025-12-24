@@ -1669,19 +1669,12 @@ body {
 }
 
 .about-staff-slider {
-  margin-left: 20rem;
   margin-top: 40rem;
-  overflow: hidden;
 }
 @media screen and (min-width: 900px) {
   .about-staff-slider {
-    margin-top: 54rem;
+    margin-top: 64rem;
   }
-}
-
-.about-staff-list ul {
-  display: flex;
-  gap: 32rem;
 }
 
 .about-staff-item {
