@@ -6,12 +6,16 @@
 
 .recruit-culture-gallery {
     margin-top: 40rem;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 .recruit-culture-gallery-list {
-    display: flex;
-    gap:10rem ;
+    // display: flex;
+    // gap:10rem ;
+
+    // @include g.mq() {
+    //     gap: 32rem;
+    // }
 
     img{
         border-radius: 10rem;

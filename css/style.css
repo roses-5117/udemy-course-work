@@ -2137,13 +2137,8 @@ body {
 
 .recruit-culture-gallery {
   margin-top: 40rem;
-  overflow: hidden;
 }
 
-.recruit-culture-gallery-list {
-  display: flex;
-  gap: 10rem;
-}
 .recruit-culture-gallery-list img {
   border-radius: 10rem;
   width: 223rem;
