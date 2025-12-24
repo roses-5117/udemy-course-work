@@ -10,9 +10,10 @@ export const initializeHamburgerMenu = () => {
         menu.showModal();
 
         //rotate and move elements with a class of "box" ("x" is a shortcut for a translateX() transform) over the course of 1 second.
-        gsap.fromto(menu,
+        gsap.fromto(
+            menu,
             {
-                opacity: 0
+                opacity: 0,
             },
             {
                 opacity: 1,
@@ -20,12 +21,23 @@ export const initializeHamburgerMenu = () => {
                 ease:"power2.out"
             }
         );
-    }
+    };
 
     const closeMenu = () =>{
-        document.body.style.overflow = "";
-        menu.close();
-    }
+
+        gsap.to(
+            menu,
+            {
+                opacity: 0,
+                duration: 0.3,
+                ease:"power2.out",
+                onComplete: () => {
+                    menu.close();
+                    document.body.style.overflow = "";
+                }
+            }
+        );
+    };
 
     openButton.addEventListener("click",()=>{
         openMenu();
@@ -34,4 +46,18 @@ export const initializeHamburgerMenu = () => {
     closeButton.addEventListener("click",()=>{
         closeMenu();
     });
+
+    document.addEventListener('keydown' , (event)=>{
+        if (event.key=="Escape"){
+            event.preventDefault();
+            closeMenu();
+        }
+    });
+
+    Window.addEventListener('resize' , (event)=>{
+        if (window.innerWidth >= 900){
+            menu.close();
+            document.body.style.overflow="";
+        }
+    })
 };
